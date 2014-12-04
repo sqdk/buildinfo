@@ -13,30 +13,30 @@ const (
 )
 
 func init() {
-	fmt.Printf("Starting %v v. %v - %v (%v) T: %v", app, build, branch, commit, buildtime)
+	fmt.Printf("Starting %v v. %v - %v (%v) T: %v", App, Build, Branch, Commit, Buildtime)
 }
 
 func GetAppVersion() string {
-	return app
+	return App
 }
 
 func GetBuildId() string {
-	return build
+	return Build
 }
 
 func GetBuildTime() string {
-	return buildtime
+	return Buildtime
 }
 
 func GetBranch() string {
-	return branch
+	return Branch
 }
 
 func GetCommitId() string {
-	return commit
+	return Commit
 }
 
 func PrintDetails() {
-	fmt.Printf("Starting %v v. %v - %v (%v) T: %v", app, build, branch, commit, buildtime)
+	fmt.Printf("Starting %v v. %v - %v (%v) T: %v", App, Build, Branch, Commit, Buildtime)
 	return
 }
